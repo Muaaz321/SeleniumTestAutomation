@@ -1,0 +1,18 @@
+
+//input[@name='txtUsername']
+//input[@name='txtPassword']
+//input[@type='submit' and @value='LOGIN' and @class='button']
+
+link
+//a[text()='Features']
+//a[contains(text(),'Features')] 
+
+
+button
+//button[@type='button' and @class='btn']
+//button[contains(text(),'Sign Up')]
+//div[@class='dropdown']/button[@type='button' and @class='btn btn-secondary dropdown-toggle' and @id='dropdownMenuButton']
+
+
+table with checkbox on relevant field
+//a[text()='test2 test2']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']
