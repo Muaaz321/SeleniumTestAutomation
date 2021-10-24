@@ -27,6 +27,9 @@ public class BrokenLinks {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);	
 		
 		List<WebElement> links = driver.findElements(By.xpath("//a"));	
+		
+		System.out.println("Number of Links are " + links.size());
+		
 		List<String> urlList = new ArrayList<>();
 		
 		for(WebElement e:links) {
@@ -45,6 +48,8 @@ public class BrokenLinks {
 		long endTime = System.currentTimeMillis();
 		
 		System.out.println("Total Time taken :" + (stTime - endTime));
+		
+		driver.quit();
 	}
 	
 	
