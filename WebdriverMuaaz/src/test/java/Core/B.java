@@ -1,8 +1,8 @@
 package Core;
 
-public class b extends A{
+public class B extends A{
 	
-	public b() {
+	public B() {
 		//super(70);
 		//super("Muaaz");
 		//super(10 , "Second Constructor");
@@ -10,25 +10,25 @@ public class b extends A{
 		System.out.println("This is B default constructor");
 	}
 	
-	public b(int a) {
+	public B(int a) {
 		super(a);
 	}
 	
-	public b(String m) {
+	public B(String m) {
 		super(m);
 	}
 	
-	public b(int q , String p) {
+	public B(int q , String p) {
 		super(q,p);
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		b object = new b();
-		b object1=new b(10);
-		b object2=new b("Muaaz");
-		b object3=new b(20,"Tester");
+		B object = new B();
+		B object1=new B(10);
+		B object2=new B("Muaaz");
+		B object3=new B(20,"Tester");
 		
 
 	}
