@@ -30,8 +30,7 @@ public class Testing {
 		for(WebElement a:links) {
 			String url = a.getAttribute("href");
 			allLinks.add(url);
-			System.out.println(url);
-			
+						
 		}
 		
 		driver.close();driver.quit();
