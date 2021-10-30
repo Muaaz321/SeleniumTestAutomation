@@ -16,3 +16,9 @@ button
 
 table with checkbox on relevant field
 //a[text()='test2 test2']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']
+
+
+//button[@class='close' and @data-dismiss='modal' and @aria-label='Close']/parent::*
+
+Xpath Tutor
+https://www.swtestacademy.com/xpath-selenium/#xpath-preceding
