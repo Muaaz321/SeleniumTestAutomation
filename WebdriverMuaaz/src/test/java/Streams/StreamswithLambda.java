@@ -33,7 +33,7 @@ public class StreamswithLambda {
 //		linklist.forEach(ele -> System.out.println(ele.getText()));
 		
 		//remove all blank space in links 
-		
+		//2.
 		List<String> collection  =linklist.
 				stream().
 						filter(ele->!ele.getText().equals("")).
@@ -41,6 +41,16 @@ public class StreamswithLambda {
 										collect(Collectors.toList());
 		
 		collection.forEach(ele -> System.out.println(ele));
+		
+		
+		//3.
+		String firstText = linklist.stream()
+									.filter(ele -> ele.getText().equals(""))
+									.findFirst()
+									.get()
+									.getText();
+		
+		System.out.println(firstText);
 		
 		
 		driver.quit();
